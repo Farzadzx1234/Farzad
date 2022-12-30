@@ -1,0 +1,22 @@
+:root{
+  --backgound-color: rgb(23, 23, 23);
+  --backgound-img: url(/assets/images/bg.gif);
+  --main-border-color: rgba(159, 159, 159, 0.45);
+  --selection-background: rgba(255, 255, 255, 0.05);
+  --selection-color: rgba(255, 255, 255, 0.95);
+  --main-background-color: rgba(26, 26, 26, 0.85);
+  --main-background-blur: 10px;
+  --main-color: rgb(255, 255, 255);
+  --main-color2: aliceblue;
+  --main-color-light: rgba(255, 255, 255, 0.85);
+  --main-color-light2: rgba(216, 216, 216, 0.75);
+  --main-split: rgba(255, 255, 255, 0.25);
+  --main-img-linear: linear-gradient(125deg, #c3c3c3 0%, rgba(255, 191, 96, 0) 50%);
+  --main-box-background: linear-gradient(155deg, rgb(35, 35, 35), rgb(27, 27, 27) 80%);
+  --main-box-background-light: rgba(52, 52, 52, 0.5);
+  --contact-box-linear: linear-gradient(155deg, #c3c3c3 0%, rgba(255, 191, 96, 0) 50%);
+  --contact-box-background: linear-gradient(-45deg, rgb(25, 25, 25) 35%, rgb(44, 44, 44));
+  --wid-box-linear: linear-gradient(165deg, #c3c3c3 0%, rgba(255, 191, 96, 0) 50%);
+  --split-info-linear: linear-gradient(45deg, rgb(240, 248, 255) 0%, rgba(24, 24, 24, 0));
+  --project-skill-border: rgba(121, 121, 121, 0.23);
+}

@@ -1,0 +1,74 @@
+.project-skill-section{
+  padding: 10px 0;
+}
+
+.project-skill-section h3{
+  width: fit-content;
+  margin-left: 1px;
+  font-size: 1.4rem;
+}
+.project-skill-list{
+  height: fit-content;
+  width: 110%;
+  margin: 15px auto;
+}
+.project-skill-list div{
+  width: 93%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto 0 0;
+}
+.project-skill-list .project-item,
+.project-skill-list .skill-item{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: 7px 5px;
+  user-select: none;
+  height: 85px;
+}
+.project-item img,
+.skill-item img{
+  border-radius: 20px;
+  border: 0.5px solid transparent;
+  transition: .35s;
+}
+.project-item img{
+  width: 85px;
+}
+.skill-item img{
+  padding: 10px;
+  background-image: var(--main-box-background);
+  width: 65px;
+  height: 65px;
+}
+.project-item figcaption,
+.skill-item figcaption{
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 300;
+  background-image: var(--main-box-background);
+  color: var(--main-color-light2);
+  padding: 2px 7px;
+  margin: -10px auto;
+  border-radius: 7px;
+  border: 0.5px solid var(--project-skill-border);
+  opacity: 0;
+  transform: scale(110%);
+  transition: .3s;
+}
+.project-item:hover figcaption,
+.skill-item:hover figcaption{
+  opacity: 1;
+  margin: 5px auto;
+  transform: scale(100%);
+}
+.project-item figcaption:hover{
+  cursor: pointer;
+  opacity: 0.75;
+}
+.project-item:hover img,
+.skill-item:hover img{
+  border-color: var(--project-skill-border);
+}

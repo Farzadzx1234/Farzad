@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500');
+body{
+  margin: 0;
+  background-color: var(--backgound-color);
+  background-image: var(--backgound-img, none);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: grayscale(80%) !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+  font-family: 'Hind Madurai', sans-serif;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+::selection{
+  background-color: var(--selection-background);
+  color: var(--selection-color);
+}
+
+li{
+  list-style: none;
+  white-space: nowrap;
+}
+
+#all{
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  min-width: 300px;
+  max-width: 1444px;
+  margin: auto;
+}
+#info,#body{
+  display: block;
+  height: fit-content;
+  background-color: var(--main-background-color);
+  backdrop-filter: blur(var(--main-background-blur));
+  border-radius: 20px;
+  border: 1px solid var(--main-border-color);
+  margin: 60px 15px;
+  transition: .35s;
+}
+
+.split[mode=vegemite]{
+  display: block;
+  border-radius: 5px;
+  width: 90%;
+  margin: 15px auto;
+  height: 1px;
+  background-color: var(--main-split);
+}
+.split[mode=horizontal]{
+  display: block;
+  border-radius: 5px;
+  width: 1px;
+  margin: 17px auto;
+  height: 42px;
+  background-color: var(--main-split);
+}
+.split[name=msap]{
+  background-image: var(--split-info-linear);
+  display: block;
+  height: 4px;
+  border-radius: 5px;
+  width: 125px;
+  margin: 15px auto 10px 0;
+}
+
+#cr{
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.15);
+  width: fit-content;
+  margin: 0 auto -5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#cr:hover{
+  text-decoration: underline rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width:1300px) {
+  #body{
+    width: 60vw;
+  }
+}
+@media screen and (max-width:1125px) {
+  #all{
+    flex-direction: column;
+  }
+  #body{
+    width: 57vw !important;
+    margin: 10px 15px !important;
+  }
+  #info{
+    width: 57vw !important;
+    position: unset !important;
+    margin: 10px 15px !important;
+  }
+}
+@media screen and (max-width:930px) {
+  #body{
+    width: 80vw !important;
+    margin: 10px 0 !important;
+  }
+  #info{
+    width: 80vw !important;
+    margin: 10px 0 !important;
+  }
+  #cr{
+    display: none;
+  }
+}

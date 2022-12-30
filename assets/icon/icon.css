@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'ico';
+    src:url('ico.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .ico {
+    font-family: 'ico' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .icon-user:before {
+    content: "\e90b";
+  }
+  .icon-calendar:before {
+    content: "\e901";
+  }
+  .icon-location:before {
+    content: "\e903";
+  }
+  .icon-behance:before {
+    content: "\eaa8";
+  }
+  .icon-github:before {
+    content: "\eab0";
+  }
+  

@@ -1,0 +1,138 @@
+#body{
+  padding: 30px;
+  width: 830px;
+  transition: .3s;
+}
+@media screen and (max-width:1300px) {
+  #body{
+    width: 60vw;
+  }
+}
+@media screen and (max-width:1125px) {
+  #body{
+    width: 100%;
+  }
+  #info{
+    width: 100%;
+  }
+}
+
+.about-section{
+  padding: 10px 0;
+}
+.about-section h2{
+  width: 110px;
+  font-size: 1.5rem;
+}
+.about-section h2,.wid-section h3,.project-skill-section h3{
+  text-align: center;
+  color: var(--main-color2);
+  margin: 0 auto 7px 0;
+  font-weight: 500;
+}
+.about-section span[name=split]{
+  background-image: var(--split-info-linear);
+  display: block;
+  height: 3px;
+  border-radius: 5px;
+  width: 100px;
+}
+.about-section div{
+  padding: 7px 0;
+}
+.about-section p{
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--main-color-light);
+  margin: 13px 0;
+  line-height: 22px;
+}
+
+
+.wid-section{
+  padding: 10px 0;
+}
+
+.wid-section h3{
+  width: 155px;
+  font-size: 1.4rem;
+}
+.wid-section span[name=split]{
+  background-image: var(--split-info-linear);
+  display: block;
+  height: 4px;
+  border-radius: 5px;
+  width: 145px;
+}
+.wid-boxs{
+  display: flex;
+  flex-direction: row;
+}
+.wid-box{
+  display: flex;
+  flex-direction: row;
+  background-image: var(--main-box-background);
+  width: 100%;
+  /* height: fit-content; */
+  margin: 25px 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.wid-box::before{
+  content: '';
+  position: relative;
+  padding: 0px 150px;
+  margin-left: -303px;
+  margin-bottom: -25px;
+  top: -15.5px;
+  left: 287px;
+  bottom: -5.5px;
+  border-radius: 12px;
+  background-image: var(--wid-box-linear);
+  z-index: -1;
+}
+.wid-box img{
+  width: 20px;
+  padding: 11px;
+  user-select: none;
+  margin: 0 0 auto 0;
+}
+.wid-content{
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 7px;
+}
+.wid-box .wid-content h4{
+  color: var(--main-color);
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin: 0;
+}
+.wid-box .wid-content p{
+  color: var(--main-color-light);
+  font-size: 0.92rem;
+  font-weight: 400;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  margin: 0;
+  line-height: 17px;
+}
+@media screen and (max-width:1125px) {
+  .wid-boxs{
+    flex-direction: column;
+  }
+  .wid-box{
+    margin: 10px auto;
+  }
+  .wid-box.fsbox{
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width:375px) {
+  .wid-box::before{
+    padding-right: 110px;
+    margin-left: -266px;
+    left: 250px;
+  }
+}
